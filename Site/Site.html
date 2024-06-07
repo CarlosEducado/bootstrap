@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="utf-8">
@@ -11,36 +11,50 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body class="bk">
-  <!--Área da Navbar-Dropdowen-->  
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body>
+    <!--Área da Navbar-Dropdowen-->
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">CyberEspaço</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Logar</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                           Mais
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">Logar</a></li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mais
+                        </a>
+                        <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Informações</a></li>
-                            <li><a class="dropdown-item" href="#">Sobre Nós</a></li>
+                            <li><a class="dropdown-item" href="#">Sobre nós</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Contribua com o Site</a></li>
                         </ul>
                     </li>
                 </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
             </div>
         </div>
     </nav>
-<!--Área do alerta-->
+    <!--Área do alerta-->
     <div class="alert alert-primary" role="alert">
         Servidores offline <a href="#" class="alert-link">Status do servidor.</a>
-      </div>
+    </div>
     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -50,13 +64,13 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
-<!--Área do Carousel-->
+        <!--Área do Carousel-->
         <div class="carousel-inner it">
             <div class="carousel-item active">
                 <img src="./33350-scaled.jpg" class="d-block w-50 mx-auto jg" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="./5746038b0e21634575066b09mario1.webp" class="d-block w-50 mx-auto jg" alt="...">
+                <img src="./1.jpg" class="d-block w-50 mx-auto jg" alt="...">
             </div>
             <div class="carousel-item">
                 <img src="./INFOCHPDPICT000041975439.jpg" class="d-block w-50 mx-auto jg" alt="...">
@@ -73,7 +87,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-<!--Área dos Card-->
+    <!--Área dos Card-->
     <div class="car">
         <div class="card" style="width: 18rem;">
             <img src="./astronauta-bonito-relaxamento-frio-na-ilustracao-do-icone-do-vetor-dos-desenhos-animados-do-controlador-de-jogo-conceito-de-icone-de-ciencia-de-tecnologia-isolado-vetor-premium-estilo-flat-cartoon_138676-3.jpg"
@@ -102,7 +116,50 @@
             </div>
         </div>
     </div>
-<!--Área do Script-->
+    <!--Área do Accordion-->
+    <h3 class="Per">Perguntas Frequentes:</h3>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Como recupero minha senha
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Entre em contato com a gente atraves do email na aba "Sobre nós"
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item ">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Onde compro um video game retrô?
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Acesse nosso site e encontre o produto
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Como posso contribuir com o site?
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Contribua rapido e facil indo na aba "Mais" logo no topo da pagina
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Área do Script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 
